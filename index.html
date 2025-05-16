@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lowen Baban</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-color: #0796a3;
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      display: block;
+      margin: 1rem auto 0 auto;
+    }
+
+    .site-title {
+      text-align: center;
+      font-size: 4rem;
+      color: white;
+      font-family: 'Comic Sans MS', cursive;
+      margin: 0.5rem 0;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    .nav-link.active {
+      background-color: #f4c8ff;
+      font-weight: bold;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 0;
+    }
+
+    .facebook-feed {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding: 2rem;
+    }
+
+    .fb-page {
+      width: 100%;
+      max-width: 1000px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo and Title -->
+  <img src="assets/photos/logo.png" alt="Lowen Baban Logo" class="logo" />
+  <h1 class="site-title">Lowen Baban</h1>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="health_benefits.html" class="nav-link">Health Benefits</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="about_me.html" class="nav-link">About me</a>
+  </nav>
+
+  <hr />
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0">
+  </script>
+
+  <!-- Embedded Facebook Feed -->
+  <div class="facebook-feed">
+    <div class="fb-page"
+      data-href="https://www.facebook.com/profile.php?id=100063856710051"
+      data-tabs="timeline"
+      data-width="1000"
+      data-height=""
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="false"
+      data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/profile.php?id=100063856710051" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/profile.php?id=100063856710051">Lowen Baban</a>
+      </blockquote>
+    </div>
+  </div>
+
+</body>
+</html>

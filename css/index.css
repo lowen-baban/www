@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: lowenBanan;
+  src: url(../assets/fonts/Scrogglet.ttf);
+}
+
+.fontstuff{
+	color: #d3d3d3;
+	font-size: 5vw;
+}
+	
+body { 
+	background-color: #0596A0;
+
+}
+
+.active1 {
+	background-color: #EEBEFB;
+}
+
+
+.rounded-img {
+	border-radius: 1000px;
+	width: 100px;
+	padding: 5px;
+}
+
+.large {
+	font-size: 10vw;
+	color: #ffffff;
+	font-family: lowenBanan;
+}
+
+.text-babon-purple {
+	color: #ffffff;
+}
+
+.carousel-inner-height{
+	height:300px;
+}
+
+.wide{
+	/*height: 300px;
+	width: 75%;*/
+	padding: 1vw;
+	border-radius: 4vw;
+}
+
+.wide img {
+	margin:auto auto;
+	/*height:50%;
+	width:50%;*/
+}
+
+.booking{
+	font-size: 5vw;
+	color: #ffffff;
+	background-color: #EEBEFB;
+	padding: 1vw;
+	border-radius: 2vw;
+
+}
+

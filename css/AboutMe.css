@@ -1,0 +1,13 @@
+.card{
+    background-color: #8ce0e4;
+
+}
+.card-body{
+    border-style:solid;
+    border-color: #c8befb;
+    
+}
+
+.boundries{
+	padding: 0.5vw;
+}

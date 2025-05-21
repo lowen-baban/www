@@ -1,0 +1,33 @@
+.my-comment-section .comment-container,
+.my-comment-section .posted-comments {
+  max-width: 90%;
+  margin: auto;
+  background-blend-mode: rgb(93, 95, 218);
+  border-radius: 100px;
+  padding: 5%;
+  font-size: x-large;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+}
+
+.my-comment-section h2 {
+  margin-top: 0;
+}
+
+.my-comment-section input[type="text"],
+.my-comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 44px;
+  font-size: 1em;
+}
+
+.my-comment-section .comment-title {
+  font-weight: bold;
+  font-size: xx-large;
+  color: azure;
+}
+.comment-body {
+  margin-top: 5px;
+  color: #555;
+}

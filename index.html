@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lowen Baban Classes</title>
+  <link rel="icon" href="assets/photos/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background-color: #0796a3;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+
+    .fullpage-embed {
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(100vh - 200px); /* minus nav and title space */
+    }
+
+    .fullpage-embed iframe {
+      flex: 1 1 50%;
+      min-height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .fullpage-embed iframe {
+        flex-basis: 100%;
+        min-height: 50vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/photos/logo.png" class="rounded-img img-fluid logo" alt="logo" style="width:100px;" />
+    <h1 class="site-title text-white">Lowen Baban</h1>
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="health_benefits.html" class="nav-link active">Health Benefits</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about_me.html" class="nav-link">About me</a>
+    </nav>
+  </header>
+
+  <div class="fullpage-embed">
+    <!-- Instagram profile as iframe (visual only) -->
+    <iframe src="https://www.instagram.com/lowenbabanclasses/embed/" title="Instagram"></iframe>
+    <iframe src="https://bookwhen.com/lowenbabanclasses/iframe/e/ev-st66-20250605112000" frameborder="0" scrolling="yes" seamless="seamless" style="display:block;border:none;width:100%;height:900px;"></iframe>
+
+ </body>
+</html>

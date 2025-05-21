@@ -1,0 +1,114 @@
+@font-face {
+	font-family: lowenBanan;
+	src: url(../assets/fonts/Scrogglet.ttf);
+}
+
+.fontstuff {
+	color: #d3d3d3;
+	font-size: 5vw;
+}
+
+.rounded-img {
+	border-radius: 1000px;
+	width: 100px;
+	padding: 5px;
+}
+
+.large {
+	font-size: 10vw;
+	color: #ffffff;
+	font-family: lowenBanan;
+}
+
+.text-babon-purple {
+	padding: 0 1rem 0 1rem;
+	color: #ffffff;
+	font-family: lowenBanan;
+	font-size: 1.5rem;
+}
+
+.carousel-inner-height {
+	height: 300px;
+}
+
+.wide {
+	/*height: 300px;
+	width: 75%;*/
+	padding: 1vw;
+	border-radius: 4vw;
+}
+
+.wide img {
+	margin: auto auto;
+	/*height:50%;
+	width:50%;*/
+}
+
+.site-title {
+	text-align: center;
+	font-size: 4rem;
+	color: white;
+	font-family: lowenBanan;
+	margin: 0.5rem 0;
+}
+
+body {
+	background-color: #0796a3;
+	margin: 0;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.logo {
+	width: 80px;
+	display: block;
+	margin: 1rem auto 0 auto;
+}
+
+.nav {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.nav-link {
+	display: inline-block;
+	margin: 0 1rem;
+	font-size: 1.2rem;
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+
+
+.hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 0;
+}
+
+.facebook-feed {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	padding: 1rem;
+	text-align: left;
+}
+
+.fb-page {
+	width: 100%;
+}
+
+.label{
+	color: hwb(0 100% 0%);
+	font-size: x-large;
+	font-weight: bolder;
+}
+
+.button{
+	font-size: x-large;
+	font-weight: bold;
+	font-style: italic;
+	border-radius: 25%;
+	background-color: greenyellow;
+}

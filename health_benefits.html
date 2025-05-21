@@ -43,7 +43,7 @@
         const postedComments = document.getElementById('postedComments');
 
         // Fetch existing comments from backend
-        fetch('http://localhost:8080/comments')
+        fetch('/comments')
           .then(res => res.json())
           .then(comments => {
             comments.forEach(({ title, comment }) => {

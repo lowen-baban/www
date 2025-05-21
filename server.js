@@ -4,13 +4,13 @@ const cors = require('cors');
 const app = express();
 const PORT = 3030;
 
-const DB_FILE = 'commentDB.json';
+const DB_FILE = 'db.json';
 
 app.use(cors());
 app.use(express.json());
 
 
-app.get('db.json/comments', (req, res) => {
+app.get('comments', (req, res) => {
   fs.readFile(DB_FILE, 'utf8', (err, data) => {
     if (err) return res.status(500).json({ error: 'Cannot read DB' });
     const parsed = JSON.parse(data || '{"comments": []}');
@@ -19,7 +19,7 @@ app.get('db.json/comments', (req, res) => {
 });
 
 
-app.post('db.json/comments', (req, res) => {
+app.post('comments', (req, res) => {
   const { title, comment } = req.body;
   if (!title || !comment) return res.status(400).json({ error: 'Missing data' });
 

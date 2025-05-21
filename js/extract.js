@@ -27,7 +27,7 @@ document.getElementById('registrationForm').addEventListener('submit', async (ev
   console.log("Submitting:", payload);
 
   // Replace with your actual API endpoint
- const API_URL = 'http://localhost:8080/register';
+ const API_URL = 'register';
 
   try {
     const response = await fetch(API_URL, {

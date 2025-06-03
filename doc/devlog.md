@@ -22,3 +22,7 @@
 15/05/25
 - oscar fixed gallery carosel
 - oscar updated the index page
+
+03/06/25
+- shay fixed the javascript on health benefits page, refactored, created a "working" version of the database
+- not connected to any backend service yet 

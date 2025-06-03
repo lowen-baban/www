@@ -1,3 +1,7 @@
+/*
+This won't have any way of running on github pages, it's not a node environment
+*/ 
+
 const express = require('express');
 const fs = require('fs');
 const cors = require('cors');

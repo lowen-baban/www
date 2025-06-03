@@ -37,53 +37,6 @@
       <!-- Comments will be inserted here -->
   </div>
 </div>
-  <script>
-        document.addEventListener('DOMContentLoaded', () => {
-        const form = document.getElementById('commentForm');
-        const postedComments = document.getElementById('postedComments');
-
-        // Fetch existing comments from backend
-        fetch('/comments')
-          .then(res => res.json())
-          .then(comments => {
-            comments.forEach(({ title, comment }) => {
-              appendComment(title, comment);
-            });
-          });
-
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          const title = document.getElementById('title').value.trim();
-          const comment = document.getElementById('comment').value.trim();
-
-          if (!title || !comment) {
-            alert('Please fill in all fields.');
-            return;
-          }
-
-          // Send to backend
-          fetch('/comments', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title, comment })
-          })
-          .then(res => res.json())
-          .then(() => {
-            appendComment(title, comment);
-            form.reset();
-          });
-        });
-
-        function appendComment(title, comment) {
-          const commentDiv = document.createElement('div');
-          commentDiv.className = 'comment';
-          commentDiv.innerHTML = `
-            <div class="comment-title">${title}</div>
-            <div class="comment-body">${comment}</div>
-          `;
-          postedComments.appendChild(commentDiv);
-        }
-      });
-  </script>
+  <script src="health_benefits_db.js"></script>
   </body>
 </html>

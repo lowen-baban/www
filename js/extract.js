@@ -27,7 +27,7 @@ document.getElementById('registrationForm').addEventListener('submit', async (ev
   console.log("Submitting:", payload);
 
   // Replace with your actual API endpoint
- const API_URL = 'register';
+ const API_URL = 'https://sheetdb.io/api/v1/tco5us1s4klgd';
 
   try {
     const response = await fetch(API_URL, {

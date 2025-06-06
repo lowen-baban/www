@@ -1,49 +1,4 @@
 
-  document.getElementById("commentForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("title").value;
-    const comment = document.getElementById("comment").value;
-
-    fetch("https://sheetdb.io/api/v1/fpnkhb93wbk1r", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        data: {
-          name: name,
-          comment: comment
-        }
-      })
-    })
-    .then(res => res.json())
-    .then(() => {
-      alert("Comment submitted!");
-      document.getElementById("commentForm").reset();
-      loadComments(); // Optional: reload comments after submit
-    })
-    .catch(err => {
-      alert("Failed to submit comment.");
-      console.error(err);
-    });
-  });
-
-  function loadComments() {
-    fetch("https://sheetdb.io/api/v1/YOUR_API_ID")
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById("postedComments");
-        container.innerHTML = "<h2>Shared Experiences</h2>";
-        data.forEach(entry => {
-          const div = document.createElement("div");
-          div.className = "comment-entry mb-3 p-2 border rounded";
-          div.innerHTML = `<strong>${entry.name}</strong><br>${entry.comment}`;
-          container.appendChild(div);
-        });
-      });
-  }
-
-  // Load comments on page load
-  window.addEventListener("DOMContentLoaded", loadComments);
 //function appendComment(title, comment) {
  // const commentDiv = document.createElement('div');
   //commentDiv.className = 'comment';

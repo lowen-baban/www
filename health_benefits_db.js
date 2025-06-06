@@ -1,4 +1,4 @@
-<script>
+
   document.getElementById("commentForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -44,7 +44,6 @@
 
   // Load comments on page load
   window.addEventListener("DOMContentLoaded", loadComments);
-</script>
 //function appendComment(title, comment) {
  // const commentDiv = document.createElement('div');
   //commentDiv.className = 'comment';
